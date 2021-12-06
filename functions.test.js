@@ -22,9 +22,9 @@ test('should be falsy',()=>{
 
 //ToEqual
 
-// test('user should be Vaishakh Poduval Object',()=>{
-//     expect(functions.createUser()).toEqual({firstName:'Vaishakh' , lastName:'Poduval'})
-// }) 
+test('user should be Vaishakh Poduval Object',()=>{
+    expect(functions.createUser()).toEqual({firstName:'Vaishakh' , lastName:'Poduval'})
+}) 
 
 
 //lessThan
