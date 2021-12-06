@@ -26,6 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: CodeCov
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{6a9bcaff-62b8-4e59-84f9-ea96684b8149}}
+        flags: unittests
+      
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
